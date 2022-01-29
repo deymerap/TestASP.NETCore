@@ -21,9 +21,10 @@ namespace Education.Api.Controllers
             return await _mediator.Send(new GetCourseQuery.GetCourseQueryRequest());
         }
 
-        [HttpGet("/title")]
-        public async Task<ActionResult<CourseDto>> Get(GetCourseByIdQuery.GetCourseByIdQueryRequest request)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<CourseDto>> Get(string id)
         {
+            GetCourseByIdQuery.GetCourseByIdQueryRequest request = new() { Description = id };
             return await _mediator.Send(request);
         }
 

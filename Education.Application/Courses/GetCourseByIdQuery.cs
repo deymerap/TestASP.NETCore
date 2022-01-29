@@ -34,7 +34,7 @@ namespace Education.Application.Courses
             }
             public async Task<CourseDto> Handle(GetCourseByIdQueryRequest request, CancellationToken cancellationToken)
             {
-                var vObCourse = await _educationDBContext.Courses.FirstOrDefaultAsync(x => x.Description.Contains(request.Description));
+                var vObCourse = await _educationDBContext.Courses.FirstOrDefaultAsync(x => x.Title.Contains(request.Description));
                 var vObCourseDTO = _mapper.Map<Course, CourseDto>(vObCourse);
 
                 return vObCourseDTO;
