@@ -13,5 +13,6 @@ namespace Education.Application.DTOs
         public string Description { get; set; }
         public DateTime? PublishedDate { get; set; }
         public Decimal Price { get; set; }
+        public Decimal Hour { get; set; }
     }
 }
