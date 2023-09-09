@@ -16,5 +16,6 @@ namespace Education.Application.DTOs
         public Decimal Hour { get; set; }
         public Decimal HourOne { get; set; }
         public Decimal HourTow { get; set; }
+        public Decimal Hourthree{ get; set; }
     }
 }
