@@ -14,6 +14,8 @@ namespace Education.Application.DTOs
         public DateTime? PublishedDate { get; set; }
         public Decimal Price { get; set; }
         public Decimal Hour { get; set; }
-        public Decimal Hour2 { get; set; }
+        public Decimal HourOne { get; set; }
+        public Decimal HourTow { get; set; }
+        public Decimal Hourthree{ get; set; }
     }
 }
